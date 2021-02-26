@@ -16,7 +16,8 @@ fn get_line() -> &'static str {
         "When he said\nWhen he said that my body he’d not miss\nI became a sculptress",
         "I’ve seen Venus, Venus coming\nShe come down in a cloud machine\nAnd I believe\nI believe that she is the only woman I ever seen",
         "In my life\nI hope I lie, and tell everyone you were a good wife\nAnd I hope you die\nI hope we both die",
-        "I will keep bringing the ball to you. Just trust me and jump."
+        "I will keep bringing the ball to you. Just trust me and jump.",
+        "But I am just a broken machine\nAnd I do things that I don’t really mean"
     ];
 
     return quotes.choose(&mut rand::thread_rng()).unwrap();
