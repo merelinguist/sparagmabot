@@ -1,6 +1,8 @@
 name: sparagmabot
 
-on: push
+on:
+  schedule:
+    - cron: '0 * * * *'  # every hour
 
 jobs:
   run:
