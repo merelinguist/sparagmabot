@@ -1,0 +1,10 @@
+[package]
+name = "sparagmabot"
+version = "0.1.0"
+authors = ["merelinguist <24858006+merelinguist@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+egg-mode = "0.15.0"
+rand = "0.8.3"
+tokio = { version = "0.2.25", features = ["full"] }
