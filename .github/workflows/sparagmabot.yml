@@ -2,7 +2,7 @@ name: sparagmabot
 
 on:
   schedule:
-    - cron: '0,30 * * * *'  # every half hour
+    - cron: '* * * * *'  # every half hour
 
 jobs:
   run:
