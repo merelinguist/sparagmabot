@@ -33,7 +33,9 @@ fn get_line() -> &'static str {
         "And I am frozen with joy right where I stand\nThe world throws its light underneath your hair\n40 miles from Atlanta\nThis is nowhere",
         "Lean in close to my little record player on the floor\nSo this is what the volume knob’s for",
         "And I won't get better\nBut someday I’ll be free\n’Cause I am not this body\nThat imprisons me",
-        "Hail Satan!"
+        "Hail Satan!",
+        "Eros is an issue of boundaries. He exists because certain boundaries do. In the interval between reach and grasp, between glance and counterglance, between ‘I love you’ and ‘I love you too,’ the absent presence of desire comes alive.",
+        "The poets record this struggle from within a consciousness—perhaps new in the world—of the body as a unity of limbs, senses and self, amazed at its own vulnerability."
     ];
 
     return quotes.choose(&mut rand::thread_rng()).unwrap();
