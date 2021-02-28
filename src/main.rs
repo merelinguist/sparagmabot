@@ -38,6 +38,12 @@ fn get_line() -> &'static str {
         "The poets record this struggle from within a consciousness—perhaps new in the world—of the body as a unity of limbs, senses and self, amazed at its own vulnerability."
     ];
 
+    for (_index, quote) in quotes.iter().enumerate() {
+        if quote.len() > 280 {
+            panic!("{} is too long", quote);
+        }
+    }
+
     return quotes.choose(&mut rand::thread_rng()).unwrap();
 }
 
