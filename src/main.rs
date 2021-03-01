@@ -35,7 +35,9 @@ fn get_line() -> &'static str {
         "And I won't get better\nBut someday I’ll be free\n’Cause I am not this body\nThat imprisons me",
         "Hail Satan!",
         "Eros is an issue of boundaries. He exists because certain boundaries do. In the interval between reach and grasp, between glance and counterglance, between ‘I love you’ and ‘I love you too,’ the absent presence of desire comes alive.",
-        "The poets record this struggle from within a consciousness—perhaps new in the world—of the body as a unity of limbs, senses and self, amazed at its own vulnerability."
+        "The poets record this struggle from within a consciousness—perhaps new in the world—of the body as a unity of limbs, senses and self, amazed at its own vulnerability.",
+        "It was another small triumph, to think that you had wiped away her paint.",
+        "You could take the Reverend Daughter out of Drearburh, but in a pinch she could still be counted on to scope out every angle of unfair advantage."
     ];
 
     for (_index, quote) in quotes.iter().enumerate() {
