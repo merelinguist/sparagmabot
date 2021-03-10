@@ -37,7 +37,36 @@ fn get_line() -> &'static str {
         "Eros is an issue of boundaries. He exists because certain boundaries do. In the interval between reach and grasp, between glance and counterglance, between ‘I love you’ and ‘I love you too,’ the absent presence of desire comes alive.",
         "The poets record this struggle from within a consciousness—perhaps new in the world—of the body as a unity of limbs, senses and self, amazed at its own vulnerability.",
         "It was another small triumph, to think that you had wiped away her paint.",
-        "You could take the Reverend Daughter out of Drearburh, but in a pinch she could still be counted on to scope out every angle of unfair advantage."
+        "You could take the Reverend Daughter out of Drearburh, but in a pinch she could still be counted on to scope out every angle of unfair advantage.",
+        "Mama, mama\nBe with me\nWith the music in your breast\nIn your glittering evening dress\nAnd the white flag in your fist trembling",
+        "I’m a short-wave radio\nDo you copy?\nI’m a flash of light\nFrom the radar tower to the runway\nIf I love you\nI’m gonna do it semi-automatically\nDo you blame me?",
+        "You were dead when they found you\nOn the floor of your apartment\nYou were dead, and your drum set stood there",
+        "This is just to tell you\nThat I wear your dress sometimes\nThe one you made with the gold brocade\nAnd the empire waist line\nYou fit it to your figure",
+        "This is just to tell you\nThat I wear your dress sometimes\nWear it down to the bar in town\nAnd I dance around all night\nTalking and joking\nSwearing and smoking\nLike any stranger in the crowd\nAnd nobody stares\nAnd nobody cares to tell me I’m not allowed\nI am allowed",
+        "And my body by the letter of the law is still my own\nWhen I lay down in the darkness\nUnburdened and alone",
+        "Lord have mercy on my mind\nMercy on my memory",
+        "I’m lying ’neath the same Virginia sky\nWhere she lay beside me, biding time\nTrying to abide me\nEvery night when the night was long\nShe was clinging to me",
+        "Told me twice that her love was strong\nStronger than the love in old love songs\nShe was singing to me",
+        "I brought in the winter squash\nI brought in the melon\nCortland, empire, macintosh\nOn the afternoon before the frost\nI could feel it coming",
+        "I can see her now in her flowery clothes\nAll of those things I bought her\nTrailing her perfume wherever she goes\nCross the rolling water",
+        "Wore we then our warmest capes\nWore we then our walking shoes\nOpen wide the city gates\nAnd let us through!",
+        "I have loved you for so long\nEven when I could only do you wrong\nGo see if they have our song\nOn the jukebox over there",
+        "The shepherd rode the yellow rows\nThe clouds above and the fields below\nUntil the bales had all been tied\nThen homeward turned to find his wife",
+        "How many times her name he called\nAnd no replying would she make\nHer breath it cameth not at all\nShe would not rise from where she lay",
+        "He turned the seed into the ground\nHe brought the flock to feed thereon\nHe held the cleaver and the plow\nAnd the shepherd's work was never done",
+        "Antigone: we begin in the dark and birth is the death of us",
+        "Eros, no one can fight you\nEros, you clamp down on every living thing\non girls’ cheeks on oceans on wild fields\nnot even an immortal can evade you\ncertainly not a creature of the day",
+        "you change the levels of a person’s mind\nthis Haimon crisis is all your doing\nyou shook his blood\nyou glow on girls’ eyelids\nwho cares about the laws of the land\nAphrodite, you play with us you",
+        "I like a good argument\nmarrow versus marrow\nyou two could learn from each other",
+        "many terribly quiet customers exist but none more\nterribly quiet than Man\nhis footsteps pass so perilously soft across the sea\nin marble winter",
+        "Whether apprehended as a dilemma of sensation, action or value, eros prints as the same contradictory fact: love and hate converge within erotic desire.",
+        "Triangulation makes both present at once by a shift of distance, replacing erotic action with a ruse of heart and language. For in this dance the people do not move. Desire moves. Eros is a verb.",
+        "From her inchoate little poem we learn several things about eros. The reach of desire is defined in action: beautiful (in its object), foiled (in its attempt), endless (in time).",
+        "The curve of her cheek—the thick, black lashes that fringed her golden eyes—the thumbprint divot that lay pressed like a kiss within the bow of her lip—",
+        "Everything felt dark and strange and incorrect, right down to the still-drying paint her adept had applied to her face. Gideon had not even murmured dissent at this incursion, just got on with spooning porridge into her mouth.",
+        "Time to us is sarcasm, a slick treacherous monster with a jaw like a furnace incinerating every moment of our lives.",
+        "Eternity utters a day.",
+        "Even when the soul is seared, even when no prayer can come out of our tightened throats, the clean, silent rest of the Sabbath leads us to a realm of endless peace, or to the beginning of an awareness of what eternity means."
     ];
 
     for (_index, quote) in quotes.iter().enumerate() {
@@ -51,7 +80,18 @@ fn get_line() -> &'static str {
 
 #[tokio::main]
 async fn main() {
-    // TODO: allow the environment variables to error properly
+    let args: Vec<String> = env::args().collect();
+
+    if args.len() > 1 {
+        if &args[1] == "dry" {
+            let _line = get_line();
+
+            println!("All quotes okay!");
+
+            return;
+        }
+    }
+
     let con_token = egg_mode::KeyPair::new(
         env::var("TWITTER_CONSUMER_API_KEY").unwrap(),
         env::var("TWITTER_CONSUMER_API_SECRET").unwrap(),
