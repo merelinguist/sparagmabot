@@ -66,7 +66,25 @@ fn get_line() -> &'static str {
         "Everything felt dark and strange and incorrect, right down to the still-drying paint her adept had applied to her face. Gideon had not even murmured dissent at this incursion, just got on with spooning porridge into her mouth.",
         "Time to us is sarcasm, a slick treacherous monster with a jaw like a furnace incinerating every moment of our lives.",
         "Eternity utters a day.",
-        "Even when the soul is seared, even when no prayer can come out of our tightened throats, the clean, silent rest of the Sabbath leads us to a realm of endless peace, or to the beginning of an awareness of what eternity means."
+        "Even when the soul is seared, even when no prayer can come out of our tightened throats, the clean, silent rest of the Sabbath leads us to a realm of endless peace, or to the beginning of an awareness of what eternity means.",
+        "Disrespect you but I compliment your hoes\nSanrio Boy and I compliment your hoes",
+        "I wish we never met\nWe broke up on PictoChat, crying on my DS",
+        "Remember when I called you my Barbie, and I was Ken\nThat was like the cringiest thing that I’ve ever said",
+        "I wish that we were on TV\nJust like in Pokemon\nYou’d be a Pika-girl, In the Poke world\nYes, life would be so fun",
+        "I’d be a trainer boy, and I would make the choice\nTo go and search for you\nI’d throw my pokeball, and I would catch them all\nYou’d be my Pikachu",
+        "You’re my pika girl, In the poke world\nOh, I won the gym badge, but you won my heart (pika!)\nPika girl, In the poke world\nAnd now that I’ve got you, we can never part (chu)",
+        "Lavender Lamborghini, roll up in a blue bikini\nBitches on the beaches, lookin’ super cute and freaky\nAll my friends are princesses, we keep it whipped and creamy",
+        "bitches know they can’t catch me\n(Vroom, vroom) cute, sexy and my ride’s sporty\n(Vroom, vroom) those slugs know they can't catch me",
+        "Bubblegum-pink Ferrari, yeah, I’m so bossy",
+        "Nande aitsura wa pinku?\nDoubutsu-en de omou to pinku",
+        "Dog v. cat\nYou’re canine trash\nThere’s nothing I like more than a mutt getting whacked",
+        "I wanna murder moggies all around the world\nI’ll bite you in the head, ’til you're dead",
+        "Miku Miku, you can call me Miku\nBlue hair, blue tie, hiding in your wifi",
+        "I’m thinking Miku, Miku, oo ee oo (×4)",
+        "I eat half my crispy chicken club\nI get extra mayonnaise, it’s a mess",
+        "We smoke a cigarette as the sunrise runs riot",
+        "I am young and I am good\nIt’s a hot, southern Californa day\nIf I wake you up\nthere will be hell to pay",
+        "But I am just a broken machine\nAnd I do things that I don’t really mean"
     ];
 
     for (_index, quote) in quotes.iter().enumerate() {
