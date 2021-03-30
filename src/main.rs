@@ -84,7 +84,11 @@ fn get_line() -> &'static str {
         "I eat half my crispy chicken club\nI get extra mayonnaise, it’s a mess",
         "We smoke a cigarette as the sunrise runs riot",
         "I am young and I am good\nIt’s a hot, southern Californa day\nIf I wake you up\nthere will be hell to pay",
-        "But I am just a broken machine\nAnd I do things that I don’t really mean"
+        "But I am just a broken machine\nAnd I do things that I don’t really mean",
+        "am i not allowed to enjoy boy tits",
+        "am i not allowed to enjoy boy tits",
+        "am i not allowed to enjoy boy tits",
+        "am i not allowed to enjoy boy tits",
     ];
 
     for (_index, quote) in quotes.iter().enumerate() {
