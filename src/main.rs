@@ -2,7 +2,7 @@ use egg_mode::tweet::DraftTweet;
 use rand::seq::SliceRandom;
 use std::env;
 
-// TODO: read the quotes from a text file
+// TODO: read the quotes from a text file.
 fn get_line() -> &'static str {
     let quotes = [
         "You arrive on the scene, like a message from God\nListen to the people applaud\nThis is what you were born to do",
